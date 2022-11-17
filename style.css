@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin:0;
+    font-family: 'Lato', sans-serif;
+
+}
+
+
+ header{
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    justify-items: center;
+ }
+
+
+
+
+                .newGameTittle{
+
+                    display: flex;
+                align-items: center;
+                gap: 1rem;
+                }
+
+                .newGameTittle img{
+                    width: 30px;
+                    height: 30px;
+                
+                }
+            
+                    .playerTittle{
+                        display:flex;
+                        margin-top: 2rem;
+                        gap: 5em;
+                        justify-items: center;
+                        font-size: 24px;
+                        
+
+            }
+
+    main{
+        display: grid;
+       grid-template-columns: 1fr 1fr;
+       grid-template-rows: 1fr;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+            #canvas1{
+                background-color: red;
+         
+            }   
+
+            
+            #canvas2{
+                background-color: aquamarine;
+
+            }
+
+            .scorePlayer1{
+                background-color: red;
+            }
+
+            .scorePlayer2{
+                background-color: red;
+            }
+
+
+            .footer-element{
+                display: flex;
+                flex-direction: row;
+                background-color: antiquewhite;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+                
+            }

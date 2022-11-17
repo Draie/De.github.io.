@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <!--
+        <script src="game.js"></script>
+    --> 
+    <title>Dé</title>
+</head>
+<body>
+        <header>
+            
+        <div class="newGameTittle">
+            <img src="newGame-btn.png" alt="">
+            <h3  id="newGame-btn">NEW GAME </h43>
+        </div>
+      
+                
+
+            <div class="playerTittle">
+                
+                <h3>PLAYER 1</h3>
+                <h3>PLAYER 2</h3>
+
+            </div>
+        </header>
+
+        <main>
+
+        <div class="scorePlayer-container">
+            <div class="scorePlayer1" id="scorePlayer1">
+
+            </div>
+            <canvas width:="300" height="300" id="canvas1" >
+
+                <script >
+                
+                    
+                  //  function evenement (){
+                     
+                  //   alert (mess)
+               
+                  // }
+
+
+                    let canvasOne =document.querySelector("#canvas1")
+                    canvasOne.fillRect(20,20,100,100);
+                    
+                 
+                   
+    
+                </script>
+               
+            </canvas>
+            <div class="scorePlayer2" id="scorePlayer2">
+
+            </div>
+           
+            <canvas width:="300" height="300" id="canvas2"></canvas> 
+        </div>       
+        </main>
+       
+              
+
+
+    
+        <footer>
+            <div  class="footer-element">
+                <h4 id="currentScorePlayer1">CURRENT</h4>
+                <div class="roll-dice">
+                    <img src="" alt="">
+                    <h4 >ROLL DICE</h4>
+                </div>
+
+                <div class="hold" id="hold">
+                    <img src="#" alt="">
+                    <h4 >HOLD</h4>
+                </div>
+
+                <h4 id="currentScorePlayer2">CURRENT</h4>
+
+
+
+
+            </div>
+            
+        </footer>
+    
+</body>
+</html>
