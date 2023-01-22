@@ -6,7 +6,6 @@
 
 
 
-//canvasOne.addEventListener("click",evenement)
 
 
 

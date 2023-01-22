@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap" rel="stylesheet">
+    <link href="C:\Users\HP\OneDrive\Personnel\Documents\SITE\jeu\jeu-de-d\game.js">
+    <script src="script.js"></script>
+    <!--    --> 
+        <script src="game.js" defer></script>
+           
+   
+    <title>Dé</title>
+</head>
+<body>
+        <header>
+            
+        <div id="newGameTittle">
+            <img src="newGame-btn.png" alt="">
+            <h3  id="newGame-btn">NEW GAME </h43>
+        </div>
+      
+                
+
+            <div class="playerTittle">
+                
+                <h3>PLAYER 1</h3>
+                <h3>PLAYER 2</h3>
+
+            </div>
+        </header>
+
+        <main>
+
+
+              <!--
+
+
+                PARTIE DU CODE : SCORE GLOBALE
+            -->
+
+        <div class="scorePlayer-container">
+                    <div class="scorePlayer1" id="scorePlayer1">
+                        
+                                <script>
+                                    let ScorePlayer1 = 0;
+                                    document.write(ScorePlayer1);
+                                </script>
+
+                             
+                    </div>
+
+                    <div class="Dimage">
+                
+                        <img  id ='bigD' src="Dimg/De_value1.jpg" alt="Dé a lancer" width="80" height="100">
+                     
+                                
+                                 
+                            
+                        
+                    </div>
+                
+                
+           
+                        <div class="scorePlayer2" id="scorePlayer2">
+                                    <script >
+                                        let ScorePlayer2 = 0;
+                                        document.write(ScorePlayer2);
+                                    </script>
+                        </div>
+
+
+            </div>
+           
+           
+
+
+
+            <!--
+
+
+                PARTIE DU CODE : SCORE EN COURS
+            -->
+                        
+
+
+
+                        <div class="currentGame_main">
+
+
+                          <div id="currentScorePlayer1">
+                             <h4>CURRENT</h4>
+                        </div>
+
+                                                    <div  class="btnGame">
+                                               
+
+                                                        <div class="roll-dice" >
+                                                 
+
+                                                            <img src="refresh.png" alt="reresh">
+                                                            <button class="RunDice"onclick =Deplay();>ROLL DICE<button>
+                                                               
+                                                                                                                       
+                                                        </div>
+                                        
+                                                        <div class="hold" id="hold">
+                                                            <img src="inbox-in.png" alt="sauvegarde">
+                                                            <h4 >HOLD</h4>
+                                                        </div>
+                                                    </div>
+                
+                         
+                                    
+                            
+                            <div id="currentScorePlayer2">
+                            <h4 >CURRENT</h4>
+                       
+                             </div>
+                            </div>
+
+                        
+                  
+                            
+                       
+        </main>
+        </div>       
+
+                    
+       
+              
+
+        <!--
+
+            CODE A INSERER:
+        -->
+    
+        <footer>
+           
+
+
+
+
+            </div>
+            
+        </footer>
+    
+</body>
+</html>
