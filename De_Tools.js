@@ -10,6 +10,7 @@ let holdCurrentScore1= 0;
 let holdCurrentScore2= 0;
 
 function CurrentScorePlayer (){
+    
     if (player1counter> player2counter ){
 
         currentScorePlayer1= currentScorePlayer1 + currentDe;
@@ -39,6 +40,15 @@ function HoldCurrentScore(){
         document.getElementById('HoldscorePlayer1').innerText=(holdCurrentScore1);
         currentScorePlayer1 = 0;
 
+        if(holdCurrentScore1 >  100) {
+            alert('Player 1 A GAGNERRRRR !!!!!!');
+            
+            currentScorePlayer1 = 0;
+            reloadWindow();
+           
+
+       } 
+
         }
         
     
@@ -49,21 +59,16 @@ function HoldCurrentScore(){
         document.getElementById('HoldscorePlayer2').innerText=(holdCurrentScore2);
         currentScorePlayer2=0;
 
-       } 
+         if(holdCurrentScore2 > 100){
+            alert('Player 2 A GAGNER !!!!!');
+            currentScorePlayer2=0;
+           reloadWindow();
     
-        else if(holdCurrentScore1 >  130) {
-            alert5('Player 1 A GAGNERRRRR !!!!!!')
-            currentScorePlayer1 = 0;
-            holdCurrentScore2=0;
-            holdCurrentScore1=0;
+        
 
         }
 
-        else if(holdCurrentScore2 > 130){
-            alert('Player 2 A GAGNER !!!!!')
-            currentScorePlayer2=0;
-            holdCurrentScore2=0;
-            holdCurrentScore1=0;
+      
         }
 
 
@@ -131,18 +136,26 @@ PlayerInProgress();
                     console.log( ' Avant assignation de valeur ');
                    
                     //fin de test
+
+                    if (DeNumber == 1) {
+                        DeNumber == 0;     
+
+                    }
                        
-                    if (DeNumber > 6) {
-                        DeNumber =0;     
+                   else if (DeNumber > 6) {
+                        DeNumber ==0;     
 
                     }  
                     else if(DeNumber < 6 ){
-                        DeNumber = DeNumber + 1;
+
+                    
+                        DeNumber = DeNumber + 2;
                     }
                     else if (DeNumber == 6) {
                         DeNumber =0;     
 
                     } 
+                    
                   
 
                      ///debut de test
@@ -205,7 +218,7 @@ PlayerInProgress();
                     
                                 console.log(DeShow);
                                 console.log(CurrentDeShow);
-                                console.log('Julie a bien jouer ! ');
+                                console.log('ends ');
                                 
                         
                                 DeChange();
