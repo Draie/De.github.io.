@@ -9,7 +9,11 @@
     <link href="C:\Users\HP\OneDrive\Personnel\Documents\SITE\jeu\jeu-de-d\game.js">
     <script src="script.js"></script>
     <!--    --> 
-        <script src="game.js" defer></script>
+        <script  src="game.js" defer></script>
+       <!--
+                 <script src="De_Tools.js"></script>
+        <script src="User.js"></script>
+       -->
            
    
     <title>Dé</title>
@@ -18,16 +22,20 @@
         <header>
             
         <div id="newGameTittle">
-            <img src="newGame-btn.png" alt="">
-            <h3  id="newGame-btn">NEW GAME </h43>
+            <img src="newGame-btn.png" alt=""  onclick=reloadWindow()>
+            <h3  id="newGame-btn">NEW GAME </h3>
         </div>
       
                 
 
             <div class="playerTittle">
                 
-                <h3>PLAYER 1</h3>
-                <h3>PLAYER 2</h3>
+                <div class="player1">
+                    
+                <h3> <img  id="StatusIcon1"src="InProgressBtn (2).png"> PLAYER 1</h3>
+                </div>
+                <h3><img  id="StatusIcon2"src="InProgressBtn (2).png">PLAYER 2</h3>
+
 
             </div>
         </header>
@@ -42,19 +50,14 @@
             -->
 
         <div class="scorePlayer-container">
-                    <div class="scorePlayer1" id="scorePlayer1">
-                        
-                                <script>
-                                    let ScorePlayer1 = 0;
-                                    document.write(ScorePlayer1);
-                                </script>
-
+                    <div id="HoldscorePlayer1" >
+                       
                              
                     </div>
 
                     <div class="Dimage">
                 
-                        <img  id ='bigD' src="Dimg/De_value1.jpg" alt="Dé a lancer" width="80" height="100">
+                        <img  id ='bigD' src="Dimg/de_value_0.jpg" alt="Dé a lancer" width="80" height="100">
                      
                                 
                                  
@@ -64,11 +67,8 @@
                 
                 
            
-                        <div class="scorePlayer2" id="scorePlayer2">
-                                    <script >
-                                        let ScorePlayer2 = 0;
-                                        document.write(ScorePlayer2);
-                                    </script>
+                        <div id="HoldscorePlayer2" >
+                     
                         </div>
 
 
@@ -91,7 +91,9 @@
 
 
                           <div id="currentScorePlayer1">
+                           
                              <h4>CURRENT</h4>
+                             <div  id="scorePlayer1"><p>0</p></div>
                         </div>
 
                                                     <div  class="btnGame">
@@ -100,15 +102,16 @@
                                                         <div class="roll-dice" >
                                                  
 
-                                                            <img src="refresh.png" alt="reresh">
-                                                            <button class="RunDice"onclick =Deplay();>ROLL DICE<button>
+                                                            <img src="refresh.png"alt="reresh"  onclick =Deplay()>
+                                                            <button class="RunDice"onclick =Deplay()>ROLL DICE<button>
                                                                
                                                                                                                        
                                                         </div>
                                         
                                                         <div class="hold" id="hold">
-                                                            <img src="inbox-in.png" alt="sauvegarde">
-                                                            <h4 >HOLD</h4>
+                                                            <img src="inbox-in.png" alt="sauvegarde" onclick = HoldCurrentScore()>
+                                                           
+                                                            <button class="holdBtn"onclick = HoldCurrentScore()>HOLD</button>
                                                         </div>
                                                     </div>
                 
@@ -116,8 +119,11 @@
                                     
                             
                             <div id="currentScorePlayer2">
+                                
                             <h4 >CURRENT</h4>
-                       
+
+                            <div  id="scorePlayer2"><p>0</p></div>
+                          
                              </div>
                             </div>
 
